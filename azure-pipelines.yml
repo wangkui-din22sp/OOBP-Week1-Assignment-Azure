@@ -1,3 +1,4 @@
+# Azure Pipelines configuration for TypeScript project
 trigger:
   branches:
     include:
@@ -23,26 +24,29 @@ pr:
       - tsconfig.json
       - jest.config.js
 
-pool: Default # Self-hosted agent pool
+pool:
+  vmImage: 'ubuntu-latest' # Azure-hosted agent (can be changed to self-hosted)
 
 steps:
-  - checkout: self
-    displayName: 'Checkout repository'
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '18.x' # Node.js version (matches your GitHub Actions workflow)
+    displayName: 'Install Node.js'
 
   - script: |
-      docker build -t typescript-dev .
-    displayName: 'Build Docker image'
-
-  - script: |
-      docker run --rm -v $(Build.SourcesDirectory)/:/app typescript-dev npm install
+      npm install
     displayName: 'Install dependencies'
 
   - script: |
-      docker run --rm -v $(Build.SourcesDirectory)/:/app typescript-dev npx tsc --noEmit
+      npm install --save-dev typescript jest ts-jest @types/jest
+    displayName: 'Install TypeScript and Jest'
+
+  - script: |
+      npx tsc --noEmit
     displayName: 'TypeScript type checking'
 
   - script: |
-      docker run --rm -v $(Build.SourcesDirectory)/:/app typescript-dev npx jest
+      npx jest
     displayName: 'Run Jest tests'
 
   - task: PublishTestResults@2
