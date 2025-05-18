@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools {
-        nodejs 'Node22' // Node.js 22 with npm 22.15.0
+        nodejs 'NodeJs22.15.0' // Node.js 22 with npm 22.15.0
     }
     environment {
         ACR_REGISTRY = 'wangkui.azurecr.io'
