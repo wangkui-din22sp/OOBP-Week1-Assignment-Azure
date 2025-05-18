@@ -4,8 +4,8 @@ pipeline {
         nodejs 'NodeJs22.15.0' // Node.js 22 with npm 22.15.0
     }
     environment {
-        ACR_REGISTRY = 'wangkui.azurecr.io'
-        ACR_REPOSITORY = 'typescript-week1'
+        ACR_REGISTRY = 'oobpacr.azurecr.io'
+        ACR_REPOSITORY = 'oobp-week1'
         IMAGE_TAG = "${env.BUILD_ID}"
     }
     stages {
@@ -44,7 +44,8 @@ pipeline {
     post {
         always {
             cleanWs()
-            sh "docker rmi ${ACR_REGISTRY}/${ACR_REPOSITORY}:${IMAGE_TAG} || true"
+            // Use bat for Windows compatibility
+            bat "docker rmi ${ACR_REGISTRY}/${ACR_REPOSITORY}:${IMAGE_TAG} || exit 0"
         }
         success {
             echo 'Build, test, and push to ACR completed.'
