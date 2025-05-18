@@ -5,13 +5,13 @@ pipeline {
     }
     environment {
         ACR_REGISTRY = 'wangkui.azurecr.io'
-        ACR_REPOSITORY = 'oobp-week1'
+        ACR_REPOSITORY = 'typescript-week1'
         IMAGE_TAG = "${env.BUILD_ID}"
     }
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/wangkui-din22sp/OOBP-Week1-Assignment.git', branch: 'main'
+                git url: 'https://github.com/wangkui-din22sp/OOBP-Week1-Assignment-Azure', branch: 'main'
             }
         }
         stage('Install Dependencies') {
