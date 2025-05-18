@@ -44,8 +44,7 @@ pipeline {
     post {
         always {
             cleanWs()
-            // Use bat for Windows compatibility
-            bat "docker rmi ${ACR_REGISTRY}/${ACR_REPOSITORY}:${IMAGE_TAG} || exit 0"
+            sh "docker rmi ${ACR_REGISTRY}/${ACR_REPOSITORY}:${IMAGE_TAG} || true"
         }
         success {
             echo 'Build, test, and push to ACR completed.'
@@ -55,3 +54,4 @@ pipeline {
         }
     }
 }
+
