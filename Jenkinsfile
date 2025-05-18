@@ -4,8 +4,8 @@ pipeline {
         nodejs 'NodeJs22.15.0' // Node.js 22 with npm 22.15.0
     }
     environment {
-        ACR_REGISTRY = 'oobpacr.azurecr.io'
-        ACR_REPOSITORY = 'oobp-week1'
+        ACR_REGISTRY = 'wangkui.azurecr.io'
+        ACR_REPOSITORY = 'typescript-week1'
         IMAGE_TAG = "${env.BUILD_ID}"
     }
     stages {
