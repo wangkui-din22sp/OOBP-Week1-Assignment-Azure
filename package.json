@@ -1,6 +1,8 @@
 {
   "scripts": {
-    "test": "jest --ci --reporters=default --reporters=jest-junit"
+    "build": "tsc",
+    "test": "jest --ci --reporters=default --reporters=jest-junit",
+    "start": "node dist/week1.js"
   },
   "devDependencies": {
     "typescript": "^5.0.0",
