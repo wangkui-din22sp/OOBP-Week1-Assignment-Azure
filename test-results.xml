@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="32" failures="0" errors="0" time="1.276">
+  <testsuite name="calculator" errors="0" failures="0" skipped="0" timestamp="2025-05-25T23:18:20" time="1.052" tests="32">
+    <testcase classname="calculator add with positive values" name="calculator add with positive values" time="0.002">
+    </testcase>
+    <testcase classname="calculator add with negative values" name="calculator add with negative values" time="0.001">
+    </testcase>
+    <testcase classname="calculator add with positive and negative values" name="calculator add with positive and negative values" time="0">
+    </testcase>
+    <testcase classname="calculator subtract with positive values" name="calculator subtract with positive values" time="0.001">
+    </testcase>
+    <testcase classname="calculator subtract with negative values" name="calculator subtract with negative values" time="0">
+    </testcase>
+    <testcase classname="calculator subtract with positive and negative values" name="calculator subtract with positive and negative values" time="0">
+    </testcase>
+    <testcase classname="calculator multiply with small numbers" name="calculator multiply with small numbers" time="0.001">
+    </testcase>
+    <testcase classname="calculator multiply with large numbers" name="calculator multiply with large numbers" time="0">
+    </testcase>
+    <testcase classname="calculator multiply with negative numbers" name="calculator multiply with negative numbers" time="0">
+    </testcase>
+    <testcase classname="calculator multiply with positive and negative numbers" name="calculator multiply with positive and negative numbers" time="0">
+    </testcase>
+    <testcase classname="calculator divide with small numbers" name="calculator divide with small numbers" time="0">
+    </testcase>
+    <testcase classname="calculator divide with large numbers" name="calculator divide with large numbers" time="0.001">
+    </testcase>
+    <testcase classname="createPerson create an adult person" name="createPerson create an adult person" time="0">
+    </testcase>
+    <testcase classname="createPerson create a minor person" name="createPerson create a minor person" time="0">
+    </testcase>
+    <testcase classname="personToString person to string with an adult" name="personToString person to string with an adult" time="0">
+    </testcase>
+    <testcase classname="personToString person to string with a minor" name="personToString person to string with a minor" time="0">
+    </testcase>
+    <testcase classname="cityNameAndPopulationToString city name and population to string" name="cityNameAndPopulationToString city name and population to string" time="0.001">
+    </testcase>
+    <testcase classname="isCapital is capital true" name="isCapital is capital true" time="0">
+    </testcase>
+    <testcase classname="isCapital is capital false" name="isCapital is capital false" time="0">
+    </testcase>
+    <testcase classname="getCountryName get country name" name="getCountryName get country name" time="0.001">
+    </testcase>
+    <testcase classname="withinSameCountry whether the two cities within the same country" name="withinSameCountry whether the two cities within the same country" time="0">
+    </testcase>
+    <testcase classname="withinSameCountry whether the two cities within the same country" name="withinSameCountry whether the two cities within the same country" time="0">
+    </testcase>
+    <testcase classname="getLargerPopulation get larger population" name="getLargerPopulation get larger population" time="0">
+    </testcase>
+    <testcase classname="getLargerPopulation get larger population with opposite order of parameters" name="getLargerPopulation get larger population with opposite order of parameters" time="0.001">
+    </testcase>
+    <testcase classname="getLargerPopulationString get larger population string" name="getLargerPopulationString get larger population string" time="0">
+    </testcase>
+    <testcase classname="getLargerPopulationString get larger population string with opposite order of parameters" name="getLargerPopulationString get larger population string with opposite order of parameters" time="0">
+    </testcase>
+    <testcase classname="getLargestPopulationString get the largest population string" name="getLargestPopulationString get the largest population string" time="0">
+    </testcase>
+    <testcase classname="getLargestPopulationString get the largest population string with different order of parameters" name="getLargestPopulationString get the largest population string with different order of parameters" time="0">
+    </testcase>
+    <testcase classname="getLargestPopulationString get the largest population string with different order of parameters" name="getLargestPopulationString get the largest population string with different order of parameters" time="0">
+    </testcase>
+    <testcase classname="getPopulationOrder order by population (Tokyo &gt; Philadelphia &gt; Amsterdam)" name="getPopulationOrder order by population (Tokyo &gt; Philadelphia &gt; Amsterdam)" time="0">
+    </testcase>
+    <testcase classname="getPopulationOrder test with different order of parameters" name="getPopulationOrder test with different order of parameters" time="0">
+    </testcase>
+    <testcase classname="getPopulationOrder test with different order of parameters" name="getPopulationOrder test with different order of parameters" time="0.001">
+    </testcase>
+  </testsuite>
+</testsuites>

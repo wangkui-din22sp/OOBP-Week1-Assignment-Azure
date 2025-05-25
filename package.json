@@ -5,11 +5,11 @@
     "start": "node dist/week1.js"
   },
   "devDependencies": {
-    "typescript": "^5.0.0",
-    "jest": "^29.0.0",
-    "ts-jest": "^29.0.0",
-    "@types/jest": "^29.0.0",
-    "jest-junit": "^16.0.0"
+    "@types/jest": "^29.5.14",
+    "jest": "^29.7.0",
+    "jest-junit": "^16.0.0",
+    "ts-jest": "^29.3.4",
+    "typescript": "^5.8.3"
   },
   "jest-junit": {
     "outputDirectory": "./",
